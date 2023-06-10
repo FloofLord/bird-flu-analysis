@@ -8,7 +8,6 @@ def main():
     if "data" not in os.listdir():
         os.mkdir("data")
 
-
     for link in links:
         df = pd.read_csv(link)
         #print(df.head())

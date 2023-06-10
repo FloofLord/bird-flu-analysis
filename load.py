@@ -13,8 +13,7 @@ def main():
         df = pd.read_csv(full_path)
         table_name = file.split(".")[0]
         table_name = table_name.replace("-","_")
-
-        
+    
         df.to_sql(table_name, engine, if_exists="replace")
 
 
